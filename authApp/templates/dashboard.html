@@ -1,0 +1,537 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer_profile_header.css' %}" />
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/customer_profile.css' %}" />
+    <script src="js/script.js"></script>
+    
+    <title>Online Banking System</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    
+
+    <link rel="shortcut icon" href="img/yaba.png">
+<style rel="stylesheet">
+
+    #home, #logout{
+
+        background-color:rgba(5, 21, 71,0.9);
+        border:none;
+        padding:5px;
+        width:70px;
+        color:white;
+        cursor:pointer;
+        box-shadow:2px 2px 6px rgba(5, 21, 71,0.9);
+        transition-duration: 0.6s;
+    }
+
+    #home:hover, #logout:hover{
+
+        padding:10px;
+        
+
+    }
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.column {
+  float: left;
+  width: 24.4%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  
+  clear: both;
+  width: 95%;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  line-height: 25px;
+  margin: 0px auto;
+  margin-top: 30px;
+  text-align: left;
+  background-color: #f5f5f5;
+  padding: 30px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.6);
+  /* border-radius: 15px; */
+}
+
+.about-section span {
+  color: #2352a3;
+  /* font-size: 22px; */
+  font-weight: 600;
+}
+
+
+.about-section p {
+  font-size: 14px;
+  font-size: 0.87em;
+  color: #2352a3;
+  text-align: justify;
+}
+
+.imgcontainer {
+  padding: 0 16px;
+}
+
+.imgcontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* Contact Styles */
+
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        /*body {
+            padding-top: 10vh;
+        }*/
+        
+       div .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+             background: #11a5df2b; 
+            width: 95vw;
+            padding: 15px;
+        }
+        
+        
+        h2 {
+        color: #2352a3;
+        font-weight: 600;
+        padding: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            width: 90%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            box-shadow: 0 0 15px grey;
+            text-align: center;
+            color: gray;
+            border-radius: 5px;
+            padding: 7px;
+
+        }
+        
+        .details {
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            background: #8c8c9d;
+            color: white;
+            border-radius: 5px;
+            padding: 7px;
+            box-shadow: 0 0 15px rgb(46, 119, 196);
+
+        }
+        .contact-items{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .contact-items-wrapper{
+            padding: 25px;
+        }
+        
+        .details h3 {
+            text-align: center;
+        }
+        
+        .details p {
+            font-size: 15px;
+            margin-left: 15px;
+        }
+
+        .details p a{
+        color: white;
+        }
+        .details p a:hover{
+        color: rgb(160, 154, 154);
+        }
+
+        /*
+         .material-icons{
+            width: 12px;
+            margin: 5px;
+        }
+        */
+        
+        input {
+            margin: 5px 15px;
+            height: 25px;
+        }
+        
+        textarea {
+            height: 150px;
+            margin: 5px 15px;
+        }
+        
+        button {
+            margin: 5px 15px;
+            width: 80px;
+            background: #0069f7;
+            padding: 3px 10px;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            font-size: 15px;
+        }
+           
+        
+        @media screen and (max-width:780px) {
+            .contact-info {
+            flex-direction: column;
+            width: 90%;
+        }
+        form{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .details{
+            width: 100%;
+        }
+        }
+
+</style>
+
+  </head>
+  <body>
+   
+   <!-- Message -->
+
+   {% if messages%}
+
+   {%for message in messages%}
+<div class="container mt-3 message alert alert-{{message.tags}} text-center">{{message}}</div>
+   {%endfor%}
+
+   {%endif%}
+
+
+<div class="header_main">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}#about">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'home' %}#contact">Contact Us</a>
+      </li>
+
+      {% if user.is_authenticated%}
+      <li class="nav-item">
+      <a href="/logout/" class="btn logout-btn">Logout</a>
+      </li> 
+      <li class="nav-item">
+        <span>Username : {{user}}</span>
+      </li>
+
+      {%else%}
+      <li class="nav-item">
+        <a href="/registration/" class="btn signup-btn">signup</a>
+      </li>
+      <li class="nav-item">
+        <a href="/login/" class="btn login-btn">login</a>
+      </li>
+      
+      {%endif%}
+
+    </ul>
+  </div>
+</nav>
+  <a href="index.php">
+    <div class="logo-name">
+      <div class="logo">
+        <img class="logo_img" src="{% static 'img/yaba.png' %}">
+      </div>
+
+      <div class="name">
+        <p> Online Banking System</p>
+  </a><br>
+  <h6>Using 2FA</h6>
+</div>
+</div>
+
+
+<div class="dif_banking">
+  <div class="retail_banking">
+    <a href="#">Retail Banking</a>
+  </div>
+  <div class="corporate_banking">
+    <a href="#"> Corporate Banking</a>
+  </div>
+  <div class="international_banking">
+    <a href="#"> International Banking</a>
+  </div>
+  <div class="international_banking">
+    <a href="#"> Apply Mobile Banking</a>
+  </div>
+
+  <div class="bank_servic">
+    <a href="#">Services</a>
+  </div>
+</div>
+
+
+    <div class="head">
+    
+        <div class="customer_details">
+    
+    
+            <a href="#">
+                <img class="custmr_img" src="{% static 'img/customers/No_image.jpg' %}" alt="profile" height="115px" width="105px">
+            </a>
+        </div>
+        <div class="welcome">
+    
+            <label>Welcome:
+                {% if user.is_authenticated %}
+                    {{user}}
+                {%else%}
+                    {{user}}
+                {% endif %}
+            </label>
+        </div>
+        <!-- <a class="cust_home" href="{% url 'home' %}"><input type="button" name="home" value="Home" id="home"></a>
+        <a class="cust_logout" href="/logout/"><input type="button" name="logout_btn" value="Logout"
+                id="logout"></a> -->
+
+    
+    </div><br><br>
+    <!-- <br>
+            <marquee class="warning"><p>Please Change your password regularly</p></marquee> 
+            <br> -->
+    <div class="profile_nav">
+        <ul>
+            <a href="#">
+                <li class="link1">My Account</li>
+            </a>
+            <a href="#">
+                <li class="link2">My Profile</li>
+            </a>
+            <a href="#">
+                <li class="link3">Change Password</li>
+            </a>
+            <a href="#">
+                <li class="link4">Fund Transfer</li>
+            </a>
+            <a href="#">
+                <li class="link5">Statement</li>
+            </a>
+        </ul>
+    </div>
+
+
+    <div class="cust_profile_container">
+        <div class="acc_details">
+            <span class="heading">Account Details</span><br>
+            <label>Customer Id :
+                1011046
+            </label>
+            <label>Account Number :
+                2393916894
+            </label>
+            <label>Account Name :
+                John Doe
+            </label>
+            <label>Account Type :
+                Credit
+            </label>
+            <label>Available Balance : ₦
+                55,250.00
+            </label>
+        </div>
+        <div class="statement">
+            <label class="heading">Bank Statement</label>
+            <table>
+                <th width="5%">#</th>
+                <th width="15%">Date</th>
+                <th width="15%">Trans. Id</th>
+                <th width="31%">Description</th>
+                <th width="10%">Cr.</th>
+                <th width="10%">Dr.</th>
+                <th width="20%">Total</th>
+
+    			<tr>
+                <td>1</td>
+                <td>27/07/21</td>
+    			<td>429360021</td>
+    			<td>Trevor Russo 2111121</td>
+    			<td>5000</td>
+    			<td>5000</td>
+    			<td>25000</td>
+    			</tr>
+                <tr>
+                    <td>2</td>
+                    <td>27/07/21</td>
+                    <td>429360021</td>
+                    <td>Yetunde Figcation 229111</td>
+                    <td>22000</td>
+                    <td>22000</td>
+                    <td>25000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>30/02/22</td>
+                    <td>429360021</td>
+                    <td>Esther Yollanda</td>
+                    <td>5000</td>
+                    <td>5000</td>
+                    <td>25000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>28/07/21</td>
+                    <td>429360021</td>
+                    <td>Blake Hannah 2111121</td>
+                    <td>2000</td>
+                    <td>2000</td>
+                    <td>25000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>27/07/21</td>
+                    <td>429360021</td>
+                    <td>John Doe 2111121</td>
+                    <td>51000</td>
+                    <td>51000</td>
+                    <td>215000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+<footer>
+  <div class="footer_container">
+    <div class="follow_us">
+      <p style="font-weight:bolder;color:#56caf0;">PROTECT YOURSELF</p>
+      <ul>
+        <p> Scam Alert</p>
+        <p> Internet Banking Security</p>
+        <p> Email Fraud and Phishing</p>
+        <p> Bank Verification Number (BVN)</p>
+        <p> Regulatory Authorities</p>
+      </ul>
+    </div>
+    <div class="contact" id="contact">
+      <p style="font-weight:bolder;color:#56caf0;">Contact Us</p>
+      <ul>
+        <p>Yaba college of technology, <br>Lagos state.</p>
+        <p><b>Phone:</b></p>
+        <p>+2348104207461, +2348029456908 <br>+2349024961456, +2347089636346 </p>
+        <p> Email: Onlinebanking@info.com</p>
+
+      </ul>
+    </div>
+    <div class="links">
+      <p style="font-weight:bolder;color:#56caf0;">Important Links</p>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="/login/">Login</a></li>
+        <li><a href="{% url 'home' %}#about">About Us</a></li>
+        <li><a href="{% url 'home' %}#contact">Contact Us</a></li>
+      </ul><br>
+    </div>
+
+    <div class="follow_us">
+      <p style="font-weight:bolder;color:#56caf0;">follow_us</p>
+      <ul>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+      </ul><br>
+    </div>
+
+
+  </div>
+  <div class="copyright">
+    <span>Copyright &copy; 2022 Online Banking System. All rights reserved.</span>
+  </div>
+
+
+</footer>
+
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

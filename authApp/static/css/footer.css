@@ -1,0 +1,132 @@
+body {
+  margin: 0px !important;
+}
+
+footer .footer_container {
+  width: 90% !important;
+  background-color: fuchsia !important;
+  margin: 0px auto !important;
+}
+
+footer {
+  clear: both !important;
+  background-color: #004156 !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+/*
+
+footer ul{
+    
+    background-color: darkturquoise !important;
+}
+
+footer ul li{
+    
+    background-color:firebrick !important;
+} */
+
+footer p {
+  font-size: 14px !important;
+  font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #bed2dd !important;
+  padding: 5px !important;
+  padding-top: 15px !important;
+}
+
+footer a {
+  font-size: 14px !important;
+  font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  padding-top: 20px !important;
+  color: #bed2dd !important;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+  color: white !important;
+}
+
+footer label {
+  font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  margin-left: 45px !important;
+  font-size: 14px !important;
+  line-height: 15px !important;
+  margin-bottom: 500px !important;
+  font-weight: 600 !important;
+  color: #56caf0 !important;
+}
+
+.follow_us {
+  padding: 10px !important;
+  margin: 5px !important;
+  margin-top: 8px !important;
+  /* //width: 300px !important; */
+  /* //height: 205px !important; */
+  float: left !important;
+  /* //background-color:darkslategrey !important; */
+}
+
+footer .contact {
+  padding: 10px !important;
+  margin: 5px !important;
+  margin-left: 8% !important;
+  margin-right: 5% !important;
+  margin-top: 8px !important;
+  /* // width: 295px !important;
+  //height: 205px !important; */
+  float: left !important;
+  /* //background-color:darkslategrey !important; */
+}
+
+footer .links {
+  padding: 10px !important;
+  margin: 5px !important;
+  margin-left: 2% !important;
+  margin-right: 5% !important;
+  margin-top: 8px !important;
+  /* //width: 300px !important; */
+  height: 205px !important;
+  float: left !important;
+  /* //background-color:darkslategrey !important; */
+}
+
+footer .About_GST {
+  padding: 10px !important;
+  margin: 5px !important;
+  margin-top: 8px !important;
+  /* //width: 300px !important;
+  //height: 205px !important; */
+  float: left !important;
+  /* //background-color:darkslategrey !important; */
+}
+
+footer ul li {
+  padding: 10px !important;
+  list-style: none !important;
+}
+
+footer .copyright {
+  /* border-top: 1px solid #475f81 !important; */
+  font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #bed2dd !important;
+  background-color: #005f7d !important;
+  clear: both !important;
+  text-align: center !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+footer .bestview {
+  background-color: #003344 !important;
+  font-family: verdana, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  color: #bed2dd !important;
+  clear: both !important;
+  text-align: center !important;
+  width: 100% !important;
+  font-size: 14px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
