@@ -192,6 +192,11 @@ def dashboard(request):
 
     return render(request,'dashboard.html')
 
+def customerform(request):
+
+
+    return render(request,'custom_reg_form.html')
+
 def email_verification(request):
     if request.method == "POST":
         u_otp = request.POST['otp']

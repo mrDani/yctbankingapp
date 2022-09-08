@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('',views.home,name="home"),
     path('dashboard/',views.dashboard,name="dashobard"),
+    path('customerform/',views.customerform,name="customerform"),
     path('registration/',views.Registration, name="Registration"),
     path('registration/otp/',views.otpRegistration, name="otp-Registration"),
     path('login/',views.userLogin, name="user-login"),
